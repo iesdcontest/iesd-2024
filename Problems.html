@@ -195,12 +195,12 @@
           <p>
             该数据包含单导联心电图片段。每个心电图片段长度为5秒，采样率为250赫兹。记录经过预处理，应用带通滤波器去除噪声。
             每个心电图片段有一个标签，描述了心脏异常（或正常窦性节律）。在这里，对于房颤的分类，标签为房颤（Atrial Fibrillation，AF）。对于非心律失常（non-VAs），段标记为除房颤外的其他标签。
-            我们提供了<a href="https://github.com/iesdcontest/iesdcontest2024_demo_example" target="_blank">标签列表</a>供参考。
+            我们提供了<a href="https://github.com/iesdcontest/iesdcontest2024_demo_example/blob/main/label_list.csv" target="_blank">标签列表</a>供参考。
             <br>
             The data contains single-lead ECG episodes. Each episode is 5-second in length with 250 Hz sampling rate. The recordings are pre-processed by applying a band-pass filter 
             to remove noise. Each ECG episode has one label that describes the cardiac abnormalities (or normal sinus rhythm). Here, for the classification of AF, it contains the labels 
             being AF (Atrial Fibrillation). For the non-VAs, the segments are labeled with the one other than AF. 
-			      We have provided the <a href="https://github.com/iesdcontest/iesdcontest2024_demo_example" target="_blank"> lists of labels </a> for references.
+			      We have provided the <a href="https://github.com/iesdcontest/iesdcontest2024_demo_example/blob/main/label_list.csv" target="_blank"> lists of labels </a> for references.
           </p>
           <p>
             心电图片段根据患者进行分割，分为训练集和测试集。80%的受试者心电图片段被释放为训练材料。其余20%的受试者心电图片段将用于评估提交算法的检测性能。最终评估数据集将保持私密，不会发布。
@@ -220,11 +220,11 @@
 		  </p>
 		  <p>
         每个文本文件的名称包含患者ID、标签和索引，用破折号（即“-”）分隔。例如，对于文件“S0-AFIB-0.txt”，“S0”表示受试者编号，“AFIB”表示心律失常或节律的类型
-        （参考提供的<a href="https://github.com/iesdcontest/iesdcontest2024_demo_example" target="_blank">标签列表</a>），“0”表示片段的索引。
+        （参考提供的<a href="https://github.com/iesdcontest/iesdcontest2024_demo_example/blob/main/label_list.csv" target="_blank">标签列表</a>），“0”表示片段的索引。
         <br>
         The name of each text file contains the patient ID, labels, and index separated by a dash (i.e., "-"). For example, for the file 
         "S0-AFIB-0.txt", "S0" represents the subject number, "AFIB" represents the type of arrhythmias or rhythm (refer to the provided 
-        <a href="https://github.com/iesdcontest/iesdcontest2024_demo_example" target="_blank">label list</a>), "0" represents the index of the segments.
+        <a href="https://github.com/iesdcontest/iesdcontest2024_demo_example/blob/main/label_list.csv" target="_blank">label list</a>), "0" represents the index of the segments.
 		  </p>
           <h5>
             6.Loongson Platform
