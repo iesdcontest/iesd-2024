@@ -94,6 +94,20 @@
               一个github仓库链接，该仓库包含使用 PyTorch 或 TensorFlow 等框架进行的模型设计和训练代码，或使用其他技术实现的AF检测代码。
             </li>
           </p>
+          <p style="font-weight:bold; font-size: 20px;">
+            注：
+          </p>
+          <p>
+            最终上板测试的代码模板请参考最终测试<a href="https://github.com/iesdcontest/iesdcontest2024_demo_example_evaluation" target="_blank">[例程]</a>中/tensorflow/lite/micro/examples/af_detection/main_functions.cc文件，其中第255-257行为AF检测函数接口。
+          </p>
+          <p>
+            使用tflite实现检测的各参赛队伍仅需要对./tflite-micro/tensorflow/lite/micro/models/中的.tflite文件进行替换即可；用其他方式实现检测的队伍可对第255-257行内容根据自己的设计进行替换。
+            除此之外此文件中的的所有代码不可更改，或在更改后仍能够与上位机测试程序正常通讯和测试。
+          </p>
+          <p>
+            上位机测试程序请参考evaluation_af_detection.py，上位机程序不可更改。
+          </p>
+
           <!-- <p>
             We have released the evaluation project for teams to evaluate the three metrics on their end. The evaluation project can be accessed
           			 here <a href="https://github.com/tinymlcontest/tinyml_contest2022_demo_evaluation"></i> (https://github.com/tinymlcontest/tinyml_contest2022_demo_evaluation)</a>. 
