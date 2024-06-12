@@ -1,6 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
   <head>
+    <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"> 
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
@@ -12,6 +13,16 @@
     <link rel="icon" type="image/png" sizes="32x32" href="Figures/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="Figures/favicon/favicon-16x16.png">
     <link rel="manifest" href="Figures/favicon/site.webmanifest">
+    <style>
+  table {
+    border-collapse: collapse;
+    width: 75%;
+  }
+  th, td {
+    padding: 1px;
+    text-align: left;
+  }
+</style>
     <title>2024 Intelligent Embedded System Design Contest @ ICMC</title>
   </head>
   <body>
@@ -57,14 +68,14 @@
             <div class="row">
                 <div class="col-1">
                   <button type="button" id="sidebarCollapse" class="btn btn-outline-secondary" style="margin-right: 10px; margin-left: -10px;">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon">
                   </button>
                 </div>
                 <div class="col-1">
                   <a href="http://meta-computing.info/" target="_blank"><img border="0" src="Figures/ICMC.png" width="100" height="80"></a>
                 </div>
                 <div class="col-8" style="margin-left: 20px;">
-                  <h2><a class="nav-link" href="/iesd-2024">2024 Intelligent Embedded System Design Contest at ICMC<span class="sr-only">(current)</span></a></h2>
+                  <h2><a class="nav-link" href="/iesd-2024">2024 Intelligent Embedded System Design Contest at ICMC<span class="sr-only">(current)</a></h2>
                 </div>
                 <div class="col-1">
                   <a href="https://www.cs.sdu.edu.cn/"><img border="0" src="Figures/Shandong_University.jpg" width="80" height="80"></a>
@@ -78,645 +89,247 @@
           <h3>
             Winners
           </h3>
-          To be announced.
-          <!-- <p>
-            Congrats to:
+          <p>
+              经大赛组委会评测小组对提交的作品进行测试，按<a href="./Problems.html#scoring">评分标准</a>，综合测试得分前20名的队伍公布如下：
           </p>
-		  <p><u><span style=" font-family: &quot;Arial&quot;,sans-serif; color: black;" lang="EN-US">
-		  					First Place </span></u><br>
-		  					Member: Chaojian Li, Shang Wu, Junchi Teng, Sixu Li, Yingyan Lin<br>
-		  					Team ID: Gatech EIC Lab Team</span></p>
-			<p><u><span style=" font-family: &quot;Arial&quot;,sans-serif; color: black;" lang="EN-US">
-								Second Place </span></u><br>
-								Member: Jingwei Zhang, Chaoyao Shen, Xinye Cao, Yu Zhang, Yuning Ji, Jingxuan He, Zhipeng Zhong, Zihan Zhou, Guofang Xu, Guoqing Li, Meng Zhang<br>
-								Team ID: SEUer</span></p>
-		<p><u><span style=" font-family: &quot;Arial&quot;,sans-serif; color: black;" lang="EN-US">
-							Third Place </span></u><br>
-							Member: Hanrui Wang, John Heo, Wei-Chen Wang, Jessica Zheng, Wei-Ming Chen, Ji Lin, Han Cai, Song Han<br>
-							Team ID: MIT-HAN-Lab</span></p>						
-		<span style="font-family: &quot;Arial&quot;,sans-serif; color: black; font-weight:700" lang="EN-US">
-							Please accept our heartiest congratulations!!<o:p></o:p></span></p>
 
-		<a href="https://tinymlcontest.github.io/TinyML-Design-Contest/Slides-TinyML-Contest-2022.pdf">[Intelligent Embedded System Design Contest Announcement Slides]<br></a>
+          <table style="border-spacing: 10px;">
+            <tr>
+                <td>排名</td>
+                <td>学校</td>
+                <td>队名</td>
+                <td>综合得分</td>
+                <td>F_beta</td>
+                <td>G_Score</td>
+                <td>推理延迟(ms)</td>
+                <td>存储占用(kb)</td>
+            </tr>
+            <tr>
+                  <td>1</td>
+                  <td>山东大学</td>
+                  <td>0Errors0Warnings</td>
+                  <td>67.97804796</td>
+                  <td>0.935 </td>
+                  <td>0.833 </td>
+                  <td>4.883 </td>
+                  <td>178</td>
+                  <td></td>
+                 </tr>
+                 <tr>
+                  <td>2</td>
+                  <td>北京航空航天大学</td>
+                  <td>对对对队</td>
+                  <td>66.97490441</td>
+                  <td>0.932 </td>
+                  <td>0.778 </td>
+                  <td>3.488 </td>
+                  <td>210</td>
+                  <td></td>
+                 </tr>
+                 <tr>
+                  <td>3</td>
+                  <td>西安电子科技大学</td>
+                  <td>XDULoong</td>
+                  <td>65.65099124</td>
+                  <td>0.941 </td>
+                  <td>0.778 </td>
+                  <td>6.075 </td>
+                  <td>197</td>
+                  <td></td>
+                 </tr>
+                 <tr>
+                  <td>4</td>
+                  <td>山东大学</td>
+                  <td>恋·霞</td>
+                  <td>65.62462786</td>
+                  <td>0.954 </td>
+                  <td>0.889 </td>
+                  <td>11.896 </td>
+                  <td>178</td>
+                  <td></td>
+                 </tr>
+                 <tr>
+                  <td>5</td>
+                  <td>首都师范大学</td>
+                  <td>CIE_CNU</td>
+                  <td>62.22715037</td>
+                  <td>0.856 </td>
+                  <td>0.722 </td>
+                  <td>2.845 </td>
+                  <td>162</td>
+                  <td></td>
+                 </tr>
+                 <tr>
+                  <td>6</td>
+                  <td>山西大学</td>
+                  <td>Light</td>
+                  <td>61.69191137</td>
+                  <td>0.947 </td>
+                  <td>0.833 </td>
+                  <td>13.965 </td>
+                  <td>264</td>
+                  <td></td>
+                 </tr>
+                 <tr>
+                  <td>7</td>
+                  <td>南阳理工学院</td>
+                  <td>AI战队</td>
+                  <td>61.43215829</td>
+                  <td>0.863 </td>
+                  <td>0.722 </td>
+                  <td>4.367 </td>
+                  <td>178</td>
+                  <td></td>
+                 </tr>
+                 <tr>
+                  <td>8</td>
+                  <td>华东师范大学</td>
+                  <td>ECNUer</td>
+                  <td>60.42493328</td>
+                  <td>0.941 </td>
+                  <td>0.833 </td>
+                  <td>13.789 </td>
+                  <td>471</td>
+                  <td></td>
+                 </tr>
+                 <tr>
+                  <td>9</td>
+                  <td>西南交通大学</td>
+                  <td>ModelChaos</td>
+                  <td>56.34362917</td>
+                  <td>0.880 </td>
+                  <td>0.611 </td>
+                  <td>7.767 </td>
+                  <td>215</td>
+                  <td></td>
+                 </tr>
+                 <tr>
+                  <td>10</td>
+                  <td>西安邮电大学</td>
+                  <td>海豹突击队</td>
+                  <td>55.82678198</td>
+                  <td>0.820 </td>
+                  <td>0.611 </td>
+                  <td>4.516 </td>
+                  <td>178</td>
+                  <td></td>
+                 </tr>
+                 <tr>
+                  <td>11</td>
+                  <td>西安邮电大学</td>
+                  <td>刚刚起床</td>
+                  <td>55.80784576</td>
+                  <td>0.820 </td>
+                  <td>0.611 </td>
+                  <td>4.542 </td>
+                  <td>178</td>
+                  <td></td>
+                 </tr>
+                 <tr>
+                  <td>12</td>
+                  <td>北方工业大学</td>
+                  <td>龙的传人</td>
+                  <td>50.00280173</td>
+                  <td>0.768 </td>
+                  <td>0.444 </td>
+                  <td>4.329 </td>
+                  <td>178</td>
+                  <td></td>
+                 </tr>
+                 <tr>
+                  <td>13</td>
+                  <td>河南理工大学</td>
+                  <td>河理河狸队</td>
+                  <td>49.28346876</td>
+                  <td>0.933 </td>
+                  <td>0.722 </td>
+                  <td>21.793 </td>
+                  <td>802</td>
+                  <td></td>
+                 </tr>
+                 <tr>
+                  <td>14</td>
+                  <td>北方工业大学</td>
+                  <td>芯动力</td>
+                  <td>46.76223355</td>
+                  <td>0.768 </td>
+                  <td>0.444 </td>
+                  <td>4.595 </td>
+                  <td>758</td>
+                  <td></td>
+                 </tr>
+                 <tr>
+                  <td>15</td>
+                  <td>华东师范大学</td>
+                  <td>GGBoy</td>
+                  <td>35.5628421</td>
+                  <td>0.945 </td>
+                  <td>0.833 </td>
+                  <td>332.835 </td>
+                  <td>366</td>
+                  <td></td>
+                 </tr>
+                 <tr>
+                  <td>16</td>
+                  <td>浙江大学</td>
+                  <td>排队不用干饭</td>
+                  <td>32.75912281</td>
+                  <td>0.938 </td>
+                  <td>0.778 </td>
+                  <td>60.108 </td>
+                  <td>522</td>
+                  <td></td>
+                 </tr>
+                 <tr>
+                  <td>17</td>
+                  <td>曲阜师范大学</td>
+                  <td>iML</td>
+                  <td>31.16599999</td>
+                  <td>0.923 </td>
+                  <td>0.833 </td>
+                  <td>520.042 </td>
+                  <td>1926</td>
+                  <td></td>
+                 </tr>
+                 <tr>
+                  <td>18</td>
+                  <td>西安电子科技大学</td>
+                  <td>嵌入AI队</td>
+                  <td>27.53816666</td>
+                  <td>0.917 </td>
+                  <td>0.722 </td>
+                  <td>227.586 </td>
+                  <td>3530</td>
+                  <td></td>
+                 </tr>
+                 <tr>
+                  <td>19</td>
+                  <td>曲阜师范大学</td>
+                  <td>智能先锋队</td>
+                  <td>20.62029955</td>
+                  <td>0.552 </td>
+                  <td>0.056 </td>
+                  <td>29.196 </td>
+                  <td>367</td>
+                  <td></td>
+                 </tr>
+                 <tr>
+                  <td>20</td>
+                  <td>重庆邮电大学</td>
+                  <td>Intellidiot</td>
+                  <td>18.41266668</td>
+                  <td>0.835 </td>
+                  <td>0.556 </td>
+                  <td>621.851 </td>
+                  <td>1737</td>
+                  <td></td>
+            </tr>
 
-		  <p>
-		  You can also view the following table to get detailed team scores and the implementations of the top 8 teams: </p>
-		  <table>
-    <tr>
-        <td>Rank</td>
-        <td>Team name</td>
-        <td>Final Score</td>
-        <td>F_beta</td>
-        <td>Latency</td>
-        <td>Flash</td>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td><a href="https://github.com/GATECH-EIC/TinyML-Contest-Solution"> Gatech EIC Lab Team</a></td>
-        <td>135.43187</td>
-        <td>0.972</td>
-        <td>1.747</td>
-        <td>26.39</td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td><a href="https://github.com/AiArtisan/ICCAD-TinyML-2nd-Place"> SEUer</a></td>
-        <td>132.98377</td>
-        <td>0.946</td>
-        <td>1.712</td>
-        <td>24.48</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td><a href="https://github.com/mit-han-lab/iccad-tinyml-open"> MIT-HAN-Lab</a></td>
-        <td>132.91372</td>
-        <td>0.934</td>
-        <td>0.538</td>
-        <td>11.18</td>
-    </tr>
-    <tr>
-        <td>4</td>
-        <td><a href="https://github.com/Zhoushanglin100/TinyML-HuskyCSDeepical"> HuskyCS Deepical</a></td>
-        <td>132.84182</td>
-        <td>0.978</td>
-        <td>26.197</td>
-        <td>35.46</td>
-    </tr>
-    <tr>
-        <td>5</td>
-        <td><a href="https://github.com/xlab-ub/UBPercept_TinyML"> UBPercept</a></td>
-        <td>132.21299</td>
-        <td>0.93</td>
-        <td>0.221</td>
-        <td>16.4</td>
-    </tr>
-    <tr>
-        <td>6</td>
-        <td><a href="https://github.com/eml-eda/tinyml-design-contest-iccad-2022"> MAD-AI</a></td>
-        <td>131.9082</td>
-        <td>0.953</td>
-        <td>17.745</td>
-        <td>26.81</td>
-    </tr>
-    <tr>
-        <td>7</td>
-        <td><a href="https://github.com/Augestus/SDUAES_TinyML"> SDUAES</a></td>
-        <td>131.59601</td>
-        <td>0.955</td>
-        <td>21.879</td>
-        <td>27.78</td>
-    </tr>
-    <tr>
-        <td>8</td>
-        <td><a href="https://github.com/vips4/tinyML_contest_iccad2022"> VIPS4Lab @ UNIVR</a></td>
-        <td>130.3599</td>
-        <td>0.945</td>
-        <td>4.843</td>
-        <td>51.98</td>
-    </tr>
-    <tr>
-        <td>9</td>
-        <td>EICAS</td>
-        <td>129.57699</td>
-        <td>0.929</td>
-        <td>14.194</td>
-        <td>30.4</td>
-    </tr>
-    <tr>
-        <td>10</td>
-        <td>NNoM</td>
-        <td>129.21222</td>
-        <td>0.948</td>
-        <td>32.393</td>
-        <td>35.49</td>
-    </tr>
-    <tr>
-        <td>11</td>
-        <td>ICCL</td>
-        <td>128.66616</td>
-        <td>0.91</td>
-        <td>3.881</td>
-        <td>30.14</td>
-    </tr>
-    <tr>
-        <td>12</td>
-        <td>NYCU CS CAS Lab</td>
-        <td>128.53543</td>
-        <td>0.914</td>
-        <td>3.538</td>
-        <td>37.22</td>
-    </tr>
-    <tr>
-        <td>13</td>
-        <td>ZFPTSDL</td>
-        <td>128.30386</td>
-        <td>0.906</td>
-        <td>3.978</td>
-        <td>29.61</td>
-    </tr>
-    <tr>
-        <td>14</td>
-        <td>NEUYanzhiWangLab &amp; COCOPIE</td>
-        <td>127.95964</td>
-        <td>0.894</td>
-        <td>5.855</td>
-        <td>16.86</td>
-    </tr>
-    <tr>
-        <td>15</td>
-        <td>EmPasLab</td>
-        <td>127.11459</td>
-        <td>0.905</td>
-        <td>20.038</td>
-        <td>24.09</td>
-    </tr>
-    <tr>
-        <td>16</td>
-        <td>SBST</td>
-        <td>125.22375</td>
-        <td>0.9</td>
-        <td>22.496</td>
-        <td>38.11</td>
-    </tr>
-    <tr>
-        <td>17</td>
-        <td>Vienna Heartbreakers</td>
-        <td>124.08543</td>
-        <td>0.871</td>
-        <td>8.605</td>
-        <td>32.82</td>
-    </tr>
-    <tr>
-        <td>18</td>
-        <td>TigerML</td>
-        <td>123.80695</td>
-        <td>0.884</td>
-        <td>13.867</td>
-        <td>46.84</td>
-    </tr>
-    <tr>
-        <td>19</td>
-        <td>Heisenbug</td>
-        <td>123.63882</td>
-        <td>0.911</td>
-        <td>48.111</td>
-        <td>39.68</td>
-    </tr>
-    <tr>
-        <td>20</td>
-        <td>Tiny Runners</td>
-        <td>123.23949</td>
-        <td>0.87</td>
-        <td>15.516</td>
-        <td>33.45</td>
-    </tr>
-    <tr>
-        <td>21</td>
-        <td>CORSA</td>
-        <td>122.82343</td>
-        <td>0.871</td>
-        <td>24.76</td>
-        <td>28.98</td>
-    </tr>
-    <tr>
-        <td>22</td>
-        <td>Inspur-AIoT</td>
-        <td>122.78902</td>
-        <td>0.86</td>
-        <td>13.685</td>
-        <td>29.59</td>
-    </tr>
-    <tr>
-        <td>23</td>
-        <td>InspurArchGroup</td>
-        <td>121.71803</td>
-        <td>0.895</td>
-        <td>43.069</td>
-        <td>49.75</td>
-    </tr>
-    <tr>
-        <td>24</td>
-        <td>UpBeat</td>
-        <td>121.58579</td>
-        <td>0.839</td>
-        <td>6.029</td>
-        <td>28.13</td>
-    </tr>
-    <tr>
-        <td>25</td>
-        <td>SIGNAL</td>
-        <td>118.48805</td>
-        <td>0.855</td>
-        <td>38.172</td>
-        <td>46.43</td>
-    </tr>
-    <tr>
-        <td>26</td>
-        <td>CORSA</td>
-        <td>117.69183</td>
-        <td>0.821</td>
-        <td>22.329</td>
-        <td>33</td>
-    </tr>
-    <tr>
-        <td>27</td>
-        <td>隊名DUCK不必</td>
-        <td>117.07881</td>
-        <td>0.838</td>
-        <td>39.527</td>
-        <td>41.18</td>
-    </tr>
-    <tr>
-        <td>28</td>
-        <td>Fantastic-Four</td>
-        <td>116.87666</td>
-        <td>0.805</td>
-        <td>5.299</td>
-        <td>45.44</td>
-    </tr>
-    <tr>
-        <td>29</td>
-        <td>GAFASAND</td>
-        <td>115.78129</td>
-        <td>0.82</td>
-        <td>32.802</td>
-        <td>43.45</td>
-    </tr>
-    <tr>
-        <td>30</td>
-        <td>Heart Protector</td>
-        <td>114.60469</td>
-        <td>0.851</td>
-        <td>55.594</td>
-        <td>67.38</td>
-    </tr>
-    <tr>
-        <td>31</td>
-        <td>PENG</td>
-        <td>112.54029</td>
-        <td>0.833</td>
-        <td>55.52</td>
-        <td>70.71</td>
-    </tr>
-    <tr>
-        <td>32</td>
-        <td>ByteLife</td>
-        <td>112.50959</td>
-        <td>0.831</td>
-        <td>55.778</td>
-        <td>68.92</td>
-    </tr>
-    <tr>
-        <td>33</td>
-        <td>Lydian</td>
-        <td>112.08779</td>
-        <td>0.869</td>
-        <td>95.187</td>
-        <td>71.53</td>
-    </tr>
-    <tr>
-        <td>34</td>
-        <td>CSI-lab</td>
-        <td>104.5154</td>
-        <td>0.88</td>
-        <td>59.957</td>
-        <td>225.98</td>
-    </tr>
-    <tr>
-        <td>35</td>
-        <td>JQub</td>
-        <td>103.76294</td>
-        <td>0.85</td>
-        <td>200.281</td>
-        <td>19.9</td>
-    </tr>
-    <tr>
-        <td>36</td>
-        <td>CSDL</td>
-        <td>103.23329</td>
-        <td>0.718</td>
-        <td>27.748</td>
-        <td>78.8</td>
-    </tr>
-    <tr>
-        <td>37</td>
-        <td>ESC Group</td>
-        <td>102.46615</td>
-        <td>0.794</td>
-        <td>124.106</td>
-        <td>62.83</td>
-    </tr>
-    <tr>
-        <td>38</td>
-        <td>HKUST-ZJU Joint Team</td>
-        <td>100.09728</td>
-        <td>0.896</td>
-        <td>204.833</td>
-        <td>124.26</td>
-    </tr>
-    <tr>
-        <td>39</td>
-        <td>Xtreme XNOR</td>
-        <td>88.40888</td>
-        <td>0.492</td>
-        <td>0.242</td>
-        <td>16.29</td>
-    </tr>
-    <tr>
-        <td>40</td>
-        <td>CardioCharak</td>
-        <td>29.61833</td>
-        <td>-</td>
-        <td>7.747</td>
-        <td>130.66</td>
-    </tr>
-    <tr>
-        <td>41</td>
-        <td>The cookers</td>
-        <td>23.77553</td>
-        <td>-</td>
-        <td>119.134</td>
-        <td>59.61</td>
-    </tr>
-</table><br>
-<p>
-		  This is the top10 team ranking based on the F_beta metric.</p>
-		  
-<table>
-    <tr>
-        <td>Rank</td>
-        <td>Team name</td>
-        <td>Final Score</td>
-        <td><b>F_beta</b></td>
-        <td>Latency</td>
-        <td>Flash</td>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>HuskyCS Deepical</td>
-        <td>132.84182</td>
-        <td><b>0.978</b></td>
-        <td>26.197</td>
-        <td>35.46</td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>Gatech EIC Lab Team</td>
-        <td>135.43187</td>
-        <td><b>0.972</b></td>
-        <td>1.747</td>
-        <td>26.39</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>SDUAES</td>
-        <td>131.59601</td>
-        <td><b>0.955</b></td>
-        <td>21.879</td>
-        <td>27.78</td>
-    </tr>
-    <tr>
-        <td>4</td>
-        <td>MAD-AI</td>
-        <td>131.9082</td>
-        <td><b>0.953</b></td>
-        <td>17.745</td>
-        <td>26.81</td>
-    </tr>
-    <tr>
-        <td>5</td>
-        <td>NNoM</td>
-        <td>129.21222</td>
-        <td><b>0.948</b></td>
-        <td>32.393</td>
-        <td>35.49</td>
-    </tr>
-    <tr>
-        <td>6</td>
-        <td>SEUer</td>
-        <td>132.98377</td>
-        <td><b>0.946</b></td>
-        <td>1.712</td>
-        <td>24.48</td>
-    </tr>
-    <tr>
-        <td>7</td>
-        <td>VIPS4Lab @ UNIVR</td>
-        <td>130.3599</td>
-        <td><b>0.945</b></td>
-        <td>4.843</td>
-        <td>51.98</td>
-    </tr>
-    <tr>
-        <td>8</td>
-        <td>MIT-HAN-Lab</td>
-        <td>132.91372</td>
-        <td><b>0.934</b></td>
-        <td>0.538</td>
-        <td>11.18</td>
-    </tr>
-    <tr>
-        <td>9</td>
-        <td>UBPercept</td>
-        <td>132.21299</td>
-        <td><b>0.93</b></td>
-        <td>0.221</td>
-        <td>16.4</td>
-    </tr>
-    <tr>
-        <td>10</td>
-        <td>EICAS</td>
-        <td>129.57699</td>
-        <td><b>0.929</b></td>
-        <td>14.194</td>
-        <td>30.4</td>
-    </tr>
-    
-</table><br>
-<p>
-		  This is the top10 team ranking based on the Latency metric.</p>
-<table>
-    <tr>
-        <td>Rank</td>
-        <td>Team name</td>
-        <td>Final Score</td>
-        <td>F_beta</td>
-        <td><b>Latency</b></td>
-        <td>Flash</td>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>UBPercept</td>
-        <td>132.21299</td>
-        <td>0.93</td>
-        <td><b>0.221</b></td>
-        <td>16.4</td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>Xtreme XNOR</td>
-        <td>88.40888</td>
-        <td>0.492</td>
-        <td><b>0.242</b></td>
-        <td>16.29</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>MIT-HAN-Lab</td>
-        <td>132.91372</td>
-        <td>0.934</td>
-        <td><b>0.538</b></td>
-        <td>11.18</td>
-    </tr>
-    <tr>
-        <td>4</td>
-        <td>SEUer</td>
-        <td>132.98377</td>
-        <td>0.946</td>
-        <td><b>1.712</b></td>
-        <td>24.48</td>
-    </tr>
-    <tr>
-        <td>5</td>
-        <td>Gatech EIC Lab Team</td>
-        <td>135.43187</td>
-        <td>0.972</td>
-        <td><b>1.747</b></td>
-        <td>26.39</td>
-    </tr>
-    <tr>
-        <td>6</td>
-        <td>NYCU CS CAS Lab</td>
-        <td>128.53543</td>
-        <td>0.914</td>
-        <td><b>3.538</b></td>
-        <td>37.22</td>
-    </tr>
-    <tr>
-        <td>7</td>
-        <td>ICCL</td>
-        <td>128.66616</td>
-        <td>0.91</td>
-        <td><b>3.881</b></td>
-        <td>30.14</td>
-    </tr>
-    <tr>
-        <td>8</td>
-        <td>ZFPTSDL</td>
-        <td>128.30386</td>
-        <td>0.906</td>
-        <td><b>3.978</b></td>
-        <td>29.61</td>
-    </tr>
-    <tr>
-        <td>9</td>
-        <td>VIPS4Lab @ UNIVR</td>
-        <td>130.3599</td>
-        <td>0.945</td>
-        <td><b>4.843</b></td>
-        <td>51.98</td>
-    </tr>
-    <tr>
-        <td>10</td>
-        <td>Fantastic-Four</td>
-        <td>116.87666</td>
-        <td>0.805</td>
-        <td><b>5.299</b></td>
-        <td>45.44</td>
-    </tr>
-    </table><br>
-<p>
-		  This is the top10 team ranking based on the Flash metric.</p>
-<table>
-    <tr>
-        <td>Rank</td>
-        <td>Team name</td>
-        <td>Final Score</td>
-        <td>F_beta</td>
-        <td>Latency</td>
-        <td><b>Flash</b></td>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>MIT-HAN-Lab</td>
-        <td>132.91372</td>
-        <td>0.934</td>
-        <td>0.538</td>
-        <td><b>11.18</b></td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>Xtreme XNOR</td>
-        <td>88.40888</td>
-        <td>0.492</td>
-        <td>0.242</td>
-        <td><b>16.29</b></td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>UBPercept</td>
-        <td>132.21299</td>
-        <td>0.93</td>
-        <td>0.221</td>
-        <td><b>16.4</b></td>
-    </tr>
-    <tr>
-        <td>4</td>
-        <td>NEUYanzhiWangLab&amp;COCOPIE</td>
-        <td>127.95964</td>
-        <td>0.894</td>
-        <td>5.855</td>
-        <td><b>16.86</b></td>
-    </tr>
-    <tr>
-        <td>5</td>
-        <td>JQub</td>
-        <td>103.76294</td>
-        <td>0.85</td>
-        <td>200.281</td>
-        <td><b>19.9</b></td>
-    </tr>
-    <tr>
-        <td>6</td>
-        <td>EmPasLab</td>
-        <td>127.11459</td>
-        <td>0.905</td>
-        <td>20.038</td>
-        <td><b>24.09</b></td>
-    </tr>
-    <tr>
-        <td>7</td>
-        <td>SEUer</td>
-        <td>132.98377</td>
-        <td>0.946</td>
-        <td>1.712</td>
-        <td><b>24.48</b></td>
-    </tr>
-    <tr>
-        <td>8</td>
-        <td>Gatech EIC Lab Team</td>
-        <td>135.43187</td>
-        <td>0.972</td>
-        <td>1.747</td>
-        <td><b>26.39</b></td>
-    </tr>
-    <tr>
-        <td>9</td>
-        <td>MAD-AI</td>
-        <td>131.9082</td>
-        <td>0.953</td>
-        <td>17.745</td>
-        <td><b>26.81</b></td>
-    </tr>
-    <tr>
-        <td>10</td>
-        <td>SDUAES</td>
-        <td>131.59601</td>
-        <td>0.955</td>
-        <td>21.879</td>
-        <td><b>27.78</b></td>
-    </tr>
-    </table> -->
+        </table>
+        <br>
+          <p>
+              下一步将按测试得分顺序邀请队伍，于2024年6月21号进行现场答辩，包括PPT陈述和专家提问。答辩评审小组将对每项作品实行分项打分并集体讨论。最终获奖队伍的判定将由算法得分和答辩得分共同决定。
+          </p>
         </div>            
       </div>
       
